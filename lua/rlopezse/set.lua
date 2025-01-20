@@ -15,9 +15,9 @@ vim.opt.signcolumn="yes"
 vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80"
 vim.opt.ignorecase = true
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 --vim.opt.wrap = false
+
 
