@@ -98,7 +98,14 @@ return {
         })
 
         vim.diagnostic.config({
-            -- update_in_insert = true,
+            virtual_text = {
+                spacing = 2,
+                source = "if_many", -- solo muestra la fuente si hay múltiples
+                severity = nil, -- puedes limitar los tipos: vim.diagnostic.severity.ERROR, etc.
+            },
+            signs = true,
+            underline = true,
+            update_in_insert = false, -- cambiar a true si quieres que aparezcan mientras escribes
             float = {
                 focusable = false,
                 style = "minimal",
