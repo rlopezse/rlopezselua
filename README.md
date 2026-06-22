@@ -1,3 +1,3 @@
 Configuración NeoVim en LazyVim
-- Ajustar <C-c> en Linux
-- Configuracion necesita nvim 0.11 o superior 
+- Configuracion necesita nvim 0.12 o superior 
+- Ajustar plugins necesarios a ultima version
