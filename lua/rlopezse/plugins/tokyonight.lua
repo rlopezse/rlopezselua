@@ -1,10 +1,10 @@
 return {
   {
-    "xero/miasma.nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      vim.cmd("colorscheme miasma")
+      vim.cmd("colorscheme tokyonight-night")
     end,
   },
 }
