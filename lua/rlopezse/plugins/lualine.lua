@@ -19,7 +19,7 @@ return {
       }
 
       local function mode_color()
-        return { bg = mode_colors[vim.fn.mode()] or c.lavender, fg = c.crust, gui = "bold" }
+        return { bg = mode_colors[vim.fn.mode()] or c.lavender, fg = c.crust }
       end
 
       local theme = {}
@@ -89,7 +89,7 @@ return {
               "filetype",
               icon_only = false,
               colored = false,
-              color = { bg = c.red, fg = c.crust, gui = "bold" },
+              color = { bg = c.red, fg = c.crust },
               separator = pill,
               padding = { left = 1, right = 1 },
             },
@@ -97,7 +97,7 @@ return {
           lualine_z = {
             {
               function() return " " .. vim.fn.fnamemodify(vim.fn.getcwd(), ":t") end,
-              color = { bg = c.pink, fg = c.crust, gui = "bold" },
+              color = { bg = c.pink, fg = c.crust },
               separator = pill,
               padding = { left = 1, right = 1 },
             },
